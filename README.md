@@ -14,12 +14,14 @@ The goal of the InsightChain project is to create an intuitive and interactive c
 - **Embedding** 🔍: Leverages embeddings for efficient searching and retrieval of relevant information from the vector store.
 - **Session State Management** 🔄: Keeps track of the conversation state, uploaded documents, and chat history to provide a seamless user experience.
 
-## Project Structure 📁             
+## Project Structure 📁
+```plaintext
 ├── app_logic.py
 ├── app_ui.py 
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+```
 
 ## Video Output 🎥
 
