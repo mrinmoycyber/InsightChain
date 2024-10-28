@@ -1,9 +1,9 @@
 # InsightChain
 
-## Project Goal
+## Project Goal 🎯
 The goal of the InsightChain project is to create an intuitive and interactive chatbot application that enables users to engage in natural language conversations while extracting and processing information from uploaded PDF documents. By leveraging the ChatOllama model (Llama 3.2), InsightChain aims to provide accurate and contextually relevant responses based solely on the content of the PDFs, enhancing user experience and facilitating efficient information retrieval for everyday tasks.
 
-## Features
+## Features ✨
 - **User-Friendly Interface**: Intuitive design that allows users to easily interact with the application through a web interface powered by Streamlit.
 - **PDF Upload and Processing**: Users can upload multiple PDF documents, which the application processes to extract text content for querying.
 - **Conversational AI**: Utilizes the ChatOllama model (Llama 3.2) to provide accurate responses based on the content extracted from uploaded PDFs.
@@ -14,20 +14,20 @@ The goal of the InsightChain project is to create an intuitive and interactive c
 - **Embedding**: Leverages embeddings for efficient searching and retrieval of relevant information from the vector store.
 - **Session State Management**: Keeps track of the conversation state, uploaded documents, and chat history to provide a seamless user experience.
 
-## Project Structure             
+## Project Structure 📁             
 ├── app_logic.py
 ├── app_ui.py 
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 
-## Video Output
+## Video Output 🎥
 
 Please click on the link to watch the demo (the file is more than 100 MB, so I can't upload it directly here) - https://drive.google.com/file/d/1zZ1nDZqV7mFTZLLPFPOv3ITJ0qftAcCX/view?usp=sharing
 
 ![demo](https://github.com/user-attachments/assets/d4fc24e3-f036-4685-b094-8e06e6d2f8cd)
 
-## Requirements
+## Requirements 📦
 To run this project, ensure you have the following dependencies installed:
 
 - `streamlit`
@@ -52,7 +52,7 @@ Before running the application, you need to install the Ollama CLI and download 
 ollama pull llama3.2
 ```
 
-## Usage 
+## Usage 🚀 
 Clone the repository:
 ```bash
 git clone https://github.com/mrinmoycyber/InsightChain.git
