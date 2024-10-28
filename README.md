@@ -1,18 +1,18 @@
-# InsightChain
+# InsightChain 🧠
 
 ## Project Goal 🎯
 The goal of the InsightChain project is to create an intuitive and interactive chatbot application that enables users to engage in natural language conversations while extracting and processing information from uploaded PDF documents. By leveraging the ChatOllama model (Llama 3.2), InsightChain aims to provide accurate and contextually relevant responses based solely on the content of the PDFs, enhancing user experience and facilitating efficient information retrieval for everyday tasks.
 
 ## Features ✨
-- **User-Friendly Interface**: Intuitive design that allows users to easily interact with the application through a web interface powered by Streamlit.
-- **PDF Upload and Processing**: Users can upload multiple PDF documents, which the application processes to extract text content for querying.
-- **Conversational AI**: Utilizes the ChatOllama model (Llama 3.2) to provide accurate responses based on the content extracted from uploaded PDFs.
-- **Contextual Responses**: Ensures that answers to user queries are derived directly from the uploaded documents, minimizing the risk of hallucination.
-- **Real-Time Interaction**: Engage in a back-and-forth conversation, asking questions related to the uploaded PDFs or general topics.
-- **Chat History**: Maintains a history of the conversation, allowing users to review previous interactions and responses.
-- **Text Chunking**: Implements intelligent text chunking to optimize the processing and retrieval of information from lengthy documents.
-- **Embedding**: Leverages embeddings for efficient searching and retrieval of relevant information from the vector store.
-- **Session State Management**: Keeps track of the conversation state, uploaded documents, and chat history to provide a seamless user experience.
+- **User-Friendly Interface** 🖥️: Intuitive design that allows users to easily interact with the application through a web interface powered by Streamlit.
+- **PDF Upload and Processing** 📄: Users can upload multiple PDF documents, which the application processes to extract text content for querying.
+- **Conversational AI** 💬: Utilizes the ChatOllama model (Llama 3.2) to provide accurate responses based on the content extracted from uploaded PDFs.
+- **Contextual Responses** 📚: Ensures that answers to user queries are derived directly from the uploaded documents, minimizing the risk of hallucination.
+- **Real-Time Interaction** ⏱️: Engage in a back-and-forth conversation, asking questions related to the uploaded PDFs or general topics.
+- **Chat History** 🗂️: Maintains a history of the conversation, allowing users to review previous interactions and responses.
+- **Text Chunking** ✂️: Implements intelligent text chunking to optimize the processing and retrieval of information from lengthy documents.
+- **Embedding** 🔍: Leverages embeddings for efficient searching and retrieval of relevant information from the vector store.
+- **Session State Management** 🔄: Keeps track of the conversation state, uploaded documents, and chat history to provide a seamless user experience.
 
 ## Project Structure 📁             
 ├── app_logic.py
