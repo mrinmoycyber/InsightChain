@@ -6,7 +6,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain_ollama import ChatOllama
 
-# Define PDF Text Extraction
+# Define pdf text extraction
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
@@ -17,26 +17,25 @@ def get_pdf_text(pdf_docs):
                 text += page_text
     return text
 
-# Define Text Chunking for Vector Store
+# Function for text chunking for vector store
 def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(separator="\n", chunk_size=1000, chunk_overlap=200, length_function=len)
     chunks = text_splitter.split_text(text)
     return chunks
 
-# Define Vector Store for PDF Text Chunks
+# Function for vector store for pdf text chunks
 def get_vectorstore(text_chunks):
     embeddings = HuggingFaceEmbeddings(model_name="hkunlp/instructor-xl")
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
 
-# Define Conversation Chain
 def get_conversation_chain(vectorstore):
     llm = ChatOllama(model="llama3.2:1b", base_url="http://localhost:11434/")
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=vectorstore.as_retriever(), memory=memory)
     return conversation_chain
 
-# Handle User Input
+# User input
 def handle_userinput(user_question, conversation):
     prompt = (
         "You are an AI assistant trained to provide information based only on the content extracted from the uploaded PDF document. "
@@ -46,7 +45,7 @@ def handle_userinput(user_question, conversation):
     response = conversation({'question': f"{prompt}\n{user_question}"})
     return response['answer']
 
-# Define General Chat with Ollama
+# Function for chat with Ollama
 def generate_response(input_text):
     model = ChatOllama(model="llama3.2:1b", base_url="http://localhost:11434/")
     response = model.invoke(input_text)
